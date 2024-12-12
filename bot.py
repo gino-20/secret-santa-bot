@@ -1,8 +1,6 @@
 import asyncio
 import logging
 import random
-
-from config import BOT_TOKEN, CHAT_ID, OWNER_ID, CONDITIONS, EXTRA_IDS
 import sqlite3
 
 import aiosqlite
@@ -20,6 +18,8 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.enums.parse_mode import ParseMode
 from aiogram.filters import CommandStart
 from aiogram.client.default import DefaultBotProperties
+
+from config import BOT_TOKEN, CHAT_ID, OWNER_ID, CONDITIONS, EXTRA_IDS
 
 
 async def main():
