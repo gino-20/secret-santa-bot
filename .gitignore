@@ -1,0 +1,31 @@
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+
+# Log files
+*.log
+
+# Virtual environment files
+.venv/
+env/
+.env
+venv/
+
+# VSCode files
+.vscode/
+
+# IDE files
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+*.egg-info/
+dist/
+build/
+*.egg
+*.manifest
+*.spec
