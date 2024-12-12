@@ -1,0 +1,15 @@
+services:
+  bot:
+    build: .
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - CHAT_ID=${CHAT_ID}
+      - OWNER_ID=${OWNER_ID}
+      - CONDITIONS=${CONDITIONS}
+      - EXTRA_IDS=${EXTRA_IDS}
+    restart: unless-stopped
+    volumes:
+      - db:/app/db
+
+volumes:
+  db:
