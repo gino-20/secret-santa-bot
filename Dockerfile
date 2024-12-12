@@ -1,6 +1,6 @@
 FROM python:3.12-slim-bullseye
 
-WORKDIR /
+WORKDIR /app
 
 COPY --chown=daemon:daemon requirements.txt .
 
