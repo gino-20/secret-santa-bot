@@ -63,6 +63,9 @@ async def main():
         ):
             await callback.answer(text="Похоже вы за пределами узкого круга...")
             return
+        if not callback.from_user.username:
+            await callback.message.answer("Ваш никнейм не указан!")
+            return
         try:
             async with aiosqlite.connect("./db/database.db") as db:
                 await db.execute(
